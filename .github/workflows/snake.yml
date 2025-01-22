@@ -1,0 +1,31 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # Toutes les 6 heures
+  workflow_dispatch:  # Permet de lancer le workflow manuellement
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Vérifie le repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Étape 2 : Génère le graphique Snake (GIF + SVG)
+      - name: Generate Snake animation
+        uses: Platane/snk@master
+        with:
+          github_user_name: sounyatje
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
+
+      # Étape 3 : Pousse les fichiers générés vers la branche "output"
+      - name: Push changes to output branch
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: output
+          force: true
+          path: dist
