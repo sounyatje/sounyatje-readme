@@ -1,19 +1,19 @@
 name: Generate snake animation
 
 on:
-  schedule: # execute every 12 hours
+  schedule: # Exécute toutes les 12 heures
     - cron: "* */12 * * *"
-  workflow_dispatch:
+  workflow_dispatch: # Permet d'exécuter manuellement
   push:
     branches:
-    - main
+      - main # Déclenche l'action sur les commits vers la branche main
 
 jobs:
   generate:
     permissions:
-      contents: write
+      contents: write # Permet d'écrire dans le dépôt
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -22,14 +22,20 @@ jobs:
       - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ sounyatje }} # Utilisez ce qui correspond à votre nom d'utilisateur GitHub
-          outputs: dist/snake.svg?palette=github-dark
+          github_user_name: sounyatje # Utilisez votre nom d'utilisateur GitHub
+          outputs: dist/snake.svg?palette=github-dark # Définit où l'animation sera générée
 
-      - name: Push snake.svg to the output branch
+      - name: Install ImageMagick
+        run: sudo apt-get install imagemagick
+
+      - name: Convert SVG to GIF
+        run: convert dist/snake.svg dist/snake.gif # Utilise ImageMagick pour convertir SVG en GIF
+
+      - name: Push snake.svg and snake.gif to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
-          build_dir: dist
+          target_branch: output # Assurez-vous que cette branche existe
+          build_dir: dist # Dossier de la génération
         env:
-  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }} # Utilise le token personnalisé que vous avez créé
 
