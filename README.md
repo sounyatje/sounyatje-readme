@@ -56,6 +56,6 @@
 
 <br clear="both">
 
-![snake gif](https://github.com/sounyatje/sounyatje/blob/output/github-snake-dark.svg)
+![snake gif](https://github.com/sounyatje/sounyatje-readme/blob/output/github-snake.svg)
 
 ###
