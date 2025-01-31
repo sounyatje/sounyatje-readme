@@ -35,9 +35,9 @@
   <img width="12" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" height="30" alt="wordpress logo" />
   <img width="12" />
- /* <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" height="30" alt="redux logo" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" height="30" alt="redux logo" />
   <img width="12" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" height="30" alt="typescript logo" /> */
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" height="30" alt="typescript logo" />
 </div>
 
 
