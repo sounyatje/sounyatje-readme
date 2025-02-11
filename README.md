@@ -35,6 +35,7 @@
   <img width="12" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" height="30" alt="wordpress logo" />
   <img width="12" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/TypeScript_logo_2020.svg" height="30" alt="typescript logo" />
 </div>
 
 
