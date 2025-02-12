@@ -33,6 +33,8 @@
   <img width="12" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" height="30" alt="photoshop logo" />
   <img width="12" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" height="30" alt="typescript logo" />
+  <img width="12" />
 </div>
 
 
