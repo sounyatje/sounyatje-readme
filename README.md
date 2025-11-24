@@ -1,12 +1,8 @@
 <h2 align="left">Hi 👋! My name is Sounya and I'm a frontend developer, from Belgium</h2>
 
 ###
-
-<div align="center">
-  <img src="https://github-readme-stats-sounyas-projects.vercel.app/api?username=sounyatje" alt="stats graph" />
-<img src="https://github-readme-stats-sounyas-projects.vercel.app/api/top-langs?username=sounyatje&layout=compact" alt="languages graph" />
-</div>
-
+<img src="https://github-readme-stats-nu-two-82.vercel.app/api?username=sounyatje" alt="stats graph" />
+<img src="https://github-readme-stats-nu-two-82.vercel.app/api/top-langs?username=sounyatje&layout=compact" alt="languages graph" />
 
 ###
 
